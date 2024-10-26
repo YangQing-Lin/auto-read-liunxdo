@@ -29,7 +29,7 @@
   const specificUserPostListLimit = 100;
   const currentURL = window.location.href;
   let specificUser = localStorage.getItem("specificUser") || "14790897";
-  let likeLimit = parseInt(localStorage.getItem("likeLimit") || 200, 10);
+  let likeLimit = parseInt(localStorage.getItem("likeLimit") || 16, 10);
   let BASE_URL = possibleBaseURLs.find((url) => currentURL.startsWith(url));
 
   // 环境变量：阅读网址，如果没有找到匹配的URL，则默认为第一个
