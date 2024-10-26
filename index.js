@@ -26,7 +26,7 @@
   ];
   const commentLimit = 1000;
   const topicListLimit = 100;
-  const likeLimit = 50;
+  const likeLimit = 10;  // 限制点赞数量
   // 获取当前页面的URL
   const currentURL = window.location.href;
 
@@ -289,9 +289,9 @@
       }
       localStorage.removeItem("navigatingToNextTopic");
     } else {
-      // 如果是Linuxdo，就导航到我的帖子
+      // 如果是Linuxdo，就导航到指定的帖子
       if (BASE_URL == "https://linux.do") {
-        window.location.href = "https://linux.do/t/topic/13716/518";
+        window.location.href = "https://linux.do/t/topic/242564";
       } else {
         window.location.href = `${BASE_URL}/t/topic/1`;
       }
